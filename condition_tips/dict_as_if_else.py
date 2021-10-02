@@ -21,10 +21,5 @@ def calculator_with_dict(key: str, x: float, y: float):
     }.get(key, lambda: None)()
 
 
-# Validating empty data
-def validate_list_not_empty(field: list):
-    return True if field else False
-
-
-def validate_string_not_empty(field: str):
-    return True if field else False
+print(calculator_with_if_else(key='sum', x=1, y=1))  # result: 2
+print(calculator_with_dict(key='sum', x=1, y=1))  # result: 2
